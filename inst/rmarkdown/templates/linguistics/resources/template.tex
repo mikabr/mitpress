@@ -1,0 +1,97 @@
+\documentclass[$class_options$]{Linguistics}
+\usepackage{hyperref}
+
+$for(header-includes)$
+$header-includes$
+$endfor$
+
+\title{$title$}
+
+$if(subtitle)$
+\subtitle{$subtitle$}
+$endif$
+
+$if(edition)$
+\edition{$edition$}
+$endif$
+
+\author{$author$}
+
+\begin{document}
+
+\halftitlepage
+
+\titlepage
+
+\begin{copyrightpage}
+
+	TODO(copyright) 2019 Massachusetts Institute of Technology
+
+	All rights reserved. No part of this book may be reproduced in
+        any form or by any electronic or mechanical means (including
+        photocopying, recording, or information storage and retrieval) without
+        permission in writing from the publisher.
+
+	For information about special quantity discounts, please email special sales@mitpress.mit.edu.
+
+	This book was set in Syntax and Times Roman by the author.
+
+	Printed and bound in the United States of America.
+
+	Library of Congress Cataloging-in-Publication Data
+
+	$title$ / $author$ .\\
+	\hspace*{6pt} p. cm.
+
+	Includes bibliographical references and index.\\
+	ISBN $ISBN$
+\vfill
+
+10\ 9\ 8\ 7\ 6\ 5\ 4\ 3\ 2\ 1\
+
+\end{copyrightpage}
+
+$if(dedication)$
+\dedication{$dedication$}
+$endif$
+
+$if(epigraph)$
+  \begin{epigraphpage}
+  $for(epigraph)$
+    \epigraph{$epigraph.text$}{$epigraph.source$}
+  $endfor$
+  \end{epigraphpage}
+$endif$
+
+\tableofcontents
+$if(list_figures)$\listoffigures$endif$
+$if(list_tables)$\listoftables$endif$
+
+$if(contributors)$
+  \begin{contributors}
+  $for(contributors)$
+    \contrib
+    $contributors.name$\\
+    $contributors.department$\\
+    $contributors.affiliation$\\
+    $contributors.address$
+  $endfor$
+  \end{contributors}
+$endif$
+
+$if(preface)$
+\begin{preface}
+  $preface.text$
+  \author{$preface.author$}
+  \date{$preface.date$}
+\end{preface}
+$endif$
+
+$body$
+
+\endmatter
+
+\bibliographystyle{$biblio-style$}
+\bibliography{$bibliography$}
+
+\end{document}
