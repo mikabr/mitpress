@@ -7,14 +7,16 @@ edition: "First edition"
 
 author: "Author Name(s)"
 
-ISBN: 12345
+ISBN: ?????
+copyright_year: 2020
+
 dedication: "To whomever..."
 epigraph:
   - text: "Something relevant...''"
     source: "Author, Book"
 
-list_figures: no
-list_tables: no
+list_figures: false
+list_tables: false
 
 contributors:
   - name: Person
