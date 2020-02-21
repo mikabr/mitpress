@@ -1,0 +1,47 @@
+---
+title: "Title of Book"
+
+## remove if not required
+subtitle: "Subtitle of Book"
+edition: "First edition"
+
+author: "Author Name(s)"
+
+ISBN: ?????
+copyright_year: 2020
+
+dedication: "To whomever..."
+epigraph:
+  - text: "Something relevant...''"
+    source: "Author, Book"
+
+list_figures: false
+list_tables: false
+
+contributors:
+  - name: Person
+    department: Department of Stuff
+    affiliation: Whatever University
+    address: Somewhere
+
+preface:
+  text: Sample preface text.
+  author: Author Name
+  date: Month, Year
+
+output:
+  mitpress::mitpress_newmath:
+    keep_tex: true
+
+class_options: 7x9,hyper
+biblio-style: mit-chicago
+bibliography: bibsamp.bib
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+\chapter{Hello world}
+
+Hello world \citep{antibayes}.
