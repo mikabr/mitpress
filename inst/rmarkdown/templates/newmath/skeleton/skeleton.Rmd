@@ -9,6 +9,7 @@ author: "Author Name(s)"
 
 ISBN: ?????
 copyright_year: 2020
+copyright_fonts: Font and Other Font
 
 dedication: "To whomever..."
 epigraph:
